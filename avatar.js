@@ -60,7 +60,7 @@ const avatarUrls = [
 app.use('/photos', express.static(path.join(__dirname, 'photos')));
 
 // Route to get a random profile with a unique ID
-app.get('/random-profile', (req, res) => {
+app.get('/', (req, res) => {
     // Generate a unique ID
     const uniqueId = uuid.v4();
 
