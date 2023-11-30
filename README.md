@@ -12,11 +12,11 @@ Avatar API generates random profiles with unique IDs, names, and avatar images. 
 
 ## Getting Started
 
-To use the Random Avatar API, follow these steps:
+To use the Avatar API, follow these steps:
 
 1. Clone the repository.
 2. Install dependencies: `npm install`.
-3. Start the server: `node app.js`.
+3. Start the server: `node avatar.js`.
 
 ## Usage
 
