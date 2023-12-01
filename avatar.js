@@ -1,6 +1,8 @@
 const express = require('express');
 const uuid = require('uuid');
 const path = require('path');
+const cors = require('cors');
+
 
 const app = express();
 const port = 3000;
@@ -57,6 +59,9 @@ const avatarUrls = [
 ];
 
 // Serve static files from the 'photos' folder
+
+
+app.use(cors());    
 app.use('/photos', express.static(path.join(__dirname, 'photos')));
 
 // Route to get a random profile with a unique ID
